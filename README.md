@@ -18,8 +18,11 @@ Teste prompts lado a lado (OpenAI, Gemini, Groq, Ollama local) com tempo de resp
 
 ## Arquivos do Projeto
 
+- `.git`
+- `.gitattributes`
 - `app.js`
 - `index.html`
+- `README.md`
 - `start.bat`
 - `styles.css`
 - `README.en.md`
