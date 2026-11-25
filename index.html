@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="piercer" />
+  <title>Piercer AI Prompt Playground (BYOK)</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>Piercer AI Prompt Playground</h1>
+      <p class="subtitle">Teste prompts lado a lado (OpenAI, Gemini, Groq, Ollama local) com tempo de resposta e custo por tokens</p>
+    </div>
+    <button type="button" class="btn btn-primary" id="btnRunAb">Executar A/B</button>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <div class="field"><label>System Prompt (Opcional)</label><input type="text" id="sysPrompt" value="Você é um engenheiro de software sênior. Seja direto." /></div>
+      <div class="field"><label>Prompt do Usuário</label><textarea id="userPrompt" rows="4" placeholder="Digite seu prompt para testar nos dois modelos..."></textarea></div>
+      <div id="tokenEst" class="subtitle">Tokens estimados: 0</div>
+    </section>
+
+    <section class="grid-2">
+      <article class="card">
+        <h2>Modelo A</h2>
+        <div class="row-2">
+          <select id="provA"><option value="openai">OpenAI</option><option value="gemini">Google Gemini</option><option value="groq">Groq</option><option value="ollama">Ollama Local</option></select>
+          <input type="text" id="modelA" value="gpt-4o-mini" />
+        </div>
+        <input type="password" id="keyA" placeholder="API Key (vazio p/ Ollama)" style="margin:8px 0;" />
+        <div id="metaA" class="subtitle">Aguardando...</div>
+        <pre id="outA" class="code-out"></pre>
+      </article>
+
+      <article class="card">
+        <h2>Modelo B</h2>
+        <div class="row-2">
+          <select id="provB"><option value="gemini" selected>Google Gemini</option><option value="openai">OpenAI</option><option value="groq">Groq</option><option value="ollama">Ollama Local</option></select>
+          <input type="text" id="modelB" value="gemini-2.0-flash" />
+        </div>
+        <input type="password" id="keyB" placeholder="API Key (vazio p/ Ollama)" style="margin:8px 0;" />
+        <div id="metaB" class="subtitle">Aguardando...</div>
+        <pre id="outB" class="code-out"></pre>
+      </article>
+    </section>
+  </main>
+  <script src="../piercer_i18n.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
