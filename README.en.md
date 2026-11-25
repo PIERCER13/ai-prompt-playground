@@ -22,6 +22,7 @@ Teste prompts side by side (OpenAI, Gemini, Groq, Ollama local) with tempo of re
 - `.gitattributes`
 - `app.js`
 - `index.html`
+- `piercer_i18n.js`
 - `README.md`
 - `start.bat`
 - `styles.css`
