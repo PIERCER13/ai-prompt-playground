@@ -2,7 +2,7 @@
 
 # Piercer AI Prompt Playground (BYOK)
 
-Teste prompts lado a lado (OpenAI, Gemini, Groq, Ollama local) com tempo de resposta e custo por tokens
+Teste prompts side by side (OpenAI, Gemini, Groq, Ollama local) with tempo of resposta and cost per tokens
 
 ## Features
 
@@ -18,8 +18,11 @@ Teste prompts lado a lado (OpenAI, Gemini, Groq, Ollama local) com tempo de resp
 
 ## Project Files
 
+- `.git`
+- `.gitattributes`
 - `app.js`
 - `index.html`
+- `README.md`
 - `start.bat`
 - `styles.css`
 - `README.en.md`
